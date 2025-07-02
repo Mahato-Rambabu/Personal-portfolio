@@ -11,7 +11,7 @@ const Footer = () => {
         <div>
           <h2 className="text-2xl font-bold text-[#A259FF] mb-2">Let’s Collaborate</h2>
           <p className="text-sm text-gray-300 mb-2">
-            💬 Let's build something amazing together.
+            💬 Let&apos;s build something amazing together.
           </p>
           <p className="text-sm text-blue-200">📩 mahatorambabu114@gmail.com</p>
         </div>
