@@ -62,7 +62,7 @@ const Hero = ({ onHireMeClick }) => {
             onClick={onHireMeClick}
             className="bg-[#A259FF] text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition font-semibold shadow-md"
           >
-            Let's Work Together
+           Let&apos;s Work Together
           </button>
           <a
             href="/resume.pdf"
