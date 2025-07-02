@@ -43,7 +43,7 @@ export default function ClientWrapper({ children }) {
             </button>
 
             <h2 className="text-2xl font-semibold mb-4 text-center text-[#A259FF]">
-              Let's Work Together
+              Let&apos;s Work Together
             </h2>
             <ContactForm />
           </div>
