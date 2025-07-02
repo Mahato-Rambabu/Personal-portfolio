@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 import { FaCode, FaMobileAlt, FaRocket, FaServer } from "react-icons/fa";
 import Image from "next/image";
-import "./skills.css";
 
 // Services data
 const services = [
