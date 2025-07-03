@@ -102,7 +102,7 @@ const Projects = () => {
             <div className="relative w-full h-[420px] sm:h-[480px] max-w-6xl mx-auto flex items-center justify-center overflow-hidden">
                 <button
                     onClick={prevSlide}
-                    className="absolute left-2 sm:left-4 top-[55%] sm:top-1/2 -translate-y-1/2 z-50 text-white bg-[#3A3A3D] p-3 rounded-full shadow-lg hover:bg-[#555] transition"
+                    className="absolute left-2 sm:left-4 top-[50%] sm:top-1/2 -translate-y-1/2 z-50 text-white bg-[#3A3A3D] p-3 rounded-full shadow-lg hover:bg-[#555] transition"
 
                 >
                     <FaArrowLeft />

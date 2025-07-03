@@ -70,7 +70,7 @@ const Navbar = ({ scrollToContact }) => {
                     <div className="flex items-center gap-3">
                         <button
                             onClick={() => setIsMenuOpen(!isMenuOpen)}
-                            className="md:hidden text-white text-2xl focus:outline-none transition-all duration-200 mb-1"
+                            className="md:hidden text-white text-xl focus:outline-none transition-all duration-200 mb-1"
                         >
                             {isMenuOpen ? "×" : "☰"}
                         </button>
@@ -94,7 +94,7 @@ const Navbar = ({ scrollToContact }) => {
                     {/* Contact Button */}
                     <button
                         onClick={scrollToContact}
-                        className="text-sm md:text-base bg-[#A259FF] hover:bg-[#6C63FF] text-white font-semibold px-4 md:px-5 py-2 rounded-md transition"
+                        className="text-sm md:text-base bg-[#A259FF] hover:bg-[#6C63FF] text-white font-semibold px-3 md:px-5 py-1 md:py-2 rounded-md transition"
                     >
                         Contact Me
                     </button>

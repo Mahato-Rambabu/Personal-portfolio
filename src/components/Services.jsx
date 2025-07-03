@@ -98,10 +98,10 @@ const Services = ({ onContactClick }) => {
 
       {/* CTA */}
       <div className="flex items-center justify-center gap-5 mt-8">
-        <p className="text-[#AAAAAA] italic text-md">How can I help you?</p>
+        <p className="text-[#AAAAAA] italic text-sm md:text:base">How can I help you?</p>
         <button
           onClick={onContactClick}
-          className="inline-block px-6 py-3 text-sm rounded-full bg-[#A259FF] hover:bg-[#6C63FF] transition text-white shadow-md"
+          className="inline-block md:px-6 md:py-3 px-4 py-2 text-sm rounded-full bg-[#A259FF] hover:bg-[#6C63FF] transition text-white shadow-md"
         >
           Let’s Connect
         </button>
