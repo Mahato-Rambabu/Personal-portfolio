@@ -52,7 +52,7 @@ const projectList = [
     // },
     {
         title: "TalkMore - Chat Application",
-        image: "/projects/pic6.png",
+        image: "/projects/pic7.png",
         description:
             "Real-time MERN stack chat app using socket.io and Firebase for notifications.",
         tech: ["mongodb", "express", "React", "Node.js", "TailwindCSS"],
