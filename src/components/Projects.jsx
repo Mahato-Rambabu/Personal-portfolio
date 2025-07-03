@@ -39,7 +39,7 @@ const projectList = [
             "My personal developer portfolio built with Next.js and Tailwind.",
         tech: ["Next.js", "TailwindCSS"],
         liveLink: "https://rambabu.dev",
-        codeLink: "https://github.com/your-repo/portfolio",
+        codeLink: "https://personal-portfolio-ten-psi-52.vercel.app",
     },
     {
         title: "E-commerce Grocery Online",
