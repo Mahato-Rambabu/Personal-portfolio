@@ -70,7 +70,7 @@ const Navbar = ({ scrollToContact }) => {
                     <div className="flex items-center gap-3">
                         <button
                             onClick={() => setIsMenuOpen(!isMenuOpen)}
-                            className="md:hidden text-white text-xl focus:outline-none transition-all duration-200 mb-1"
+                            className="md:hidden text-white text-xl focus:outline-none transition-all duration-200"
                         >
                             {isMenuOpen ? "×" : "☰"}
                         </button>
