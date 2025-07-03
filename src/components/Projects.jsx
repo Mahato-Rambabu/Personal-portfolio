@@ -38,27 +38,27 @@ const projectList = [
         description:
             "My personal developer portfolio built with Next.js and Tailwind.",
         tech: ["Next.js", "TailwindCSS"],
-        liveLink: "https://rambabu.dev",
-        codeLink: "https://personal-portfolio-ten-psi-52.vercel.app",
-    },
-    {
-        title: "E-commerce Grocery Online",
-        image: "/projects/pic3.png",
-        description:
-            "Fully responsive template for e-commerce stores with cart, filters, and search features.",
-        tech: ["html", "css", "php"],
-        liveLink: "https://ecom-template.vercel.app",
-        codeLink: "https://github.com/Mahato-Rambabu/Bhajiwala---Fruits-And-Vegetales",
+        liveLink: "https://personal-portfolio-ten-psi-52.vercel.app",
+        codeLink: "https://github.com/Mahato-Rambabu/Personal-portfolio",
     },
     // {
-    //     title: "TalkMore - Chat Application",
-    //     image: "/projects/pic2.png",
+    //     title: "E-commerce Grocery Online",
+    //     image: "/projects/pic3.png",
     //     description:
-    //         "Real-time MERN stack chat app using socket.io and Firebase for notifications.",
-    //     tech: ["mongodb", "express", "React", "Node.js", "TailwindCSS"],
+    //         "Fully responsive template for e-commerce stores with cart, filters, and search features.",
+    //     tech: ["html", "css", "php"],
     //     liveLink: "https://ecom-template.vercel.app",
-    //     codeLink: "https://github.com/Mahato-Rambabu/TalkMore-Chat-Application",
+    //     codeLink: "https://github.com/Mahato-Rambabu/Bhajiwala---Fruits-And-Vegetales",
     // },
+    {
+        title: "TalkMore - Chat Application",
+        image: "/projects/pic6.png",
+        description:
+            "Real-time MERN stack chat app using socket.io and Firebase for notifications.",
+        tech: ["mongodb", "express", "React", "Node.js", "TailwindCSS"],
+        liveLink: "https://github.com/Mahato-Rambabu/TalkMore-Chat-Application",
+        codeLink: "https://github.com/Mahato-Rambabu/TalkMore-Chat-Application",
+    },
     // {
     //     title: "Dashboard - Task Management",
     //     image: "/projects/pic3.png",
