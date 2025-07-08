@@ -2,6 +2,7 @@ import "./globals.css";
 import { Poppins } from "next/font/google";
 import ClientWrapper from "@/components/ClientWrapper";
 import { Toaster } from "react-hot-toast";
+import ChatBot from "@/components/ChatBot"; // ✅ Imported here
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -19,7 +20,10 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${poppins.variable}`}>
       <body className="bg-[#12121c] text-[#E0E0E0] font-sans">
         <Toaster position="top-right" />
-        <ClientWrapper>{children}</ClientWrapper>
+        <ClientWrapper>
+          {children}
+          <ChatBot />
+        </ClientWrapper>
       </body>
     </html>
   );
