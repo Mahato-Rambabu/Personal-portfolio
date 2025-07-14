@@ -30,7 +30,6 @@ export default function ChatBot() {
     }
   };
 
-  // Dynamic input field background shade based on input length
   const getInputBg = () => {
     if (input.length > 100) return "bg-[#2a2d3d]";
     if (input.length > 50) return "bg-[#23203b]";
@@ -38,7 +37,7 @@ export default function ChatBot() {
   };
 
   return (
-    <div className="fixed bottom-16 md:bottom-10 right-6 z-50">
+    <div className="fixed bottom-16 md:bottom-10 right-4 z-50">
       {!isOpen ? (
         <button
           className="p-4 rounded-full bg-purple-700/50 text-white shadow-xl backdrop-blur-md hover:bg-purple-600/60 transition"
@@ -47,9 +46,7 @@ export default function ChatBot() {
           <FaComments size={24} />
         </button>
       ) : (
-        <div className="w-[300px] sm:w-[350px] bg-[#1f1b2e]/80 text-white rounded-2xl shadow-2xl
-          border border-purple-500/30 backdrop-blur-md flex flex-col overflow-hidden"
-        >
+        <div className="w-[90vw] sm:w-[350px] max-h-[80vh] bg-[#1f1b2e]/80 text-white rounded-2xl shadow-2xl border border-purple-500/30 backdrop-blur-md flex flex-col overflow-hidden">
           {/* Header */}
           <div className="flex items-center justify-between px-4 py-2 bg-[#2a2348]/60 border-b border-purple-400/20">
             <span className="font-semibold text-sm">AI Chat Assistant</span>
@@ -59,7 +56,7 @@ export default function ChatBot() {
           </div>
 
           {/* Messages */}
-          <div className="flex-1 p-4 overflow-y-auto max-h-96 space-y-2 text-sm">
+          <div className="flex-1 p-4 overflow-y-auto max-h-[60vh] space-y-2 text-sm">
             {messages.map((msg, index) => (
               <div
                 key={index}
