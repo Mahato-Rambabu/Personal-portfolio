@@ -2,7 +2,7 @@ import "./globals.css";
 import { Poppins } from "next/font/google";
 import ClientWrapper from "@/components/ClientWrapper";
 import { Toaster } from "react-hot-toast";
-import ChatBot from "@/components/ChatBot"; // ✅ Imported here
+import ChatBot from "@/components/ChatBot";
 
 const poppins = Poppins({
   subsets: ["latin"],

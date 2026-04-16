@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
-const roles = ["QRAR Founder", "Freelancer", "Full Stack Developer"];
+const roles = ["a Full Stack Developer", "a Freelancer", "Open to Full-Time Roles"];
 
 const Hero = ({ onHireMeClick }) => {
   const [index, setIndex] = useState(0);
@@ -34,7 +34,7 @@ const Hero = ({ onHireMeClick }) => {
 
   return (
     <section
-      id="about"
+      id="hero"
       className="w-full min-h-[95vh] flex flex-col-reverse md:flex-row items-center justify-around px-6 md:px-[8.5rem] pt-24 text-white"
     >
       {/* Left Text Area */}
@@ -49,25 +49,25 @@ const Hero = ({ onHireMeClick }) => {
         </h1>
 
         <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-gray-300 mb-4 h-10">
-          I’m a {text}
+          I’m {text}
           <span className="border-r-2 border-gray-300 animate-pulse ml-1"></span>
         </h2>
 
         <p className="text-gray-400 mb-6 text-md max-w-xl mx-auto md:mx-0">
-          I work closely with founders and teams to bring their ideas to life — designing and developing modern web apps that are fast, functional, and easy to manage.
+         "I build fast, scalable full-stack web apps from SaaS platforms to real-time apps using React, PHP, Node.js, and MongoDB."
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
           <button
             onClick={onHireMeClick}
-            className="bg-[#A259FF] text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition font-semibold shadow-md"
+            className="bg-[#A259FF] text-white px-6 py-3 rounded-lg hover:bg-[#6C63FF] transition font-semibold shadow-md"
           >
            Let&apos;s Work Together
           </button>
           <a
             href="/resume.pdf"
             download="Ram-Mahato-Resume"
-            className="border border-[#A259FF] text-[#A259FF] px-6 py-3 rounded-lg hover:bg-purple-100 transition font-semibold"
+            className="border border-[#A259FF] text-[#A259FF] px-6 py-3 rounded-lg hover:bg-[#A259FF]/10 transition font-semibold"
           >
             Download CV
           </a>

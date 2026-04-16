@@ -24,7 +24,7 @@ const techIcons = {
 
 const projectList = [
     {
-        title: "QRAR - Restaurant SaaS App",
+        title: "Nexadine - Restaurant SaaS App",
         image: "/projects/qrar.png",
         description:
             "A QR-based Progressive Web App for restaurant dine-in ordering with dynamic menus and dashboard.",
@@ -32,6 +32,16 @@ const projectList = [
         liveLink: "https://qrar-front-jet.vercel.app/home?restaurantId=67f4bfc6848659b1dd0c327d",
         codeLink: "https://github.com/Mahato-Rambabu/qrar",
     },
+    {
+        title: "Nexadine - Restaurant Dashboard",
+        image: "/projects/qrar-dashboard.png",
+        description:
+            "A powerful dashboard that enables restaurant owners to manage menus, orders, and offers in real time with a seamless and intuitive interface.",
+        tech: ["pwa", "mongodb", "express", "React", "Node.js", "TailwindCSS"],
+        liveLink: "https://qrar-lyart.vercel.app/",
+        codeLink: "https://github.com/Mahato-Rambabu/qrar",
+    },
+
     {
         title: "Portfolio Website",
         image: "/projects/pic2.png",
@@ -41,15 +51,15 @@ const projectList = [
         liveLink: "https://personal-portfolio-ten-psi-52.vercel.app",
         codeLink: "https://github.com/Mahato-Rambabu/Personal-portfolio",
     },
-    // {
-    //     title: "E-commerce Grocery Online",
-    //     image: "/projects/pic3.png",
-    //     description:
-    //         "Fully responsive template for e-commerce stores with cart, filters, and search features.",
-    //     tech: ["html", "css", "php"],
-    //     liveLink: "https://ecom-template.vercel.app",
-    //     codeLink: "https://github.com/Mahato-Rambabu/Bhajiwala---Fruits-And-Vegetales",
-    // },
+    {
+        title: "Gym-trainer - Fitness App",
+        image: "/projects/gym.png",
+        description:
+            "Fully responsive template for e-commerce stores with cart, filters, and search features.",
+        tech: ["html", "css", "php"],
+        liveLink: "https://fitplay.web.app/",
+        codeLink: "https://github.com/Anuj-010/gym-trainer-app",
+    },
     {
         title: "TalkMore - Chat Application",
         image: "/projects/pic7.png",
@@ -102,7 +112,7 @@ const Projects = () => {
             <div className="relative w-full h-[420px] sm:h-[480px] max-w-6xl mx-auto flex items-center justify-center overflow-hidden">
                 <button
                     onClick={prevSlide}
-                    className="absolute left-2 sm:left-4 top-[50%] sm:top-1/2 -translate-y-1/2 z-50 text-white bg-[#3A3A3D] p-3 rounded-full shadow-lg hover:bg-[#555] transition"
+                    className="absolute left-2 sm:left-4 top-[40%] sm:top-1/2 -translate-y-1/2 z-50 text-white bg-[#3A3A3D] p-3 rounded-full shadow-lg hover:bg-[#555] transition"
 
                 >
                     <FaArrowLeft />
@@ -150,11 +160,7 @@ const Projects = () => {
 
                             >
                                 <div className="relative w-full">
-                                    <img
-                                        src={project.image}
-                                        alt={project.title}
-                                        className="object-cover rounded-t-3xl"
-                                    />
+                                   <img src={project.image} className="w-full h-44 object-cover rounded-t-3xl" />
                                 </div>
                                 <div className="p-5">
                                     <h3 className="text-sm sm:text-md font-bold mb-2">{project.title}</h3>
@@ -197,7 +203,7 @@ const Projects = () => {
 
                 <button
                     onClick={nextSlide}
-                    className="absolute right-4 top-1/2 -translate-y-1/2 z-20 text-white bg-[#3A3A3D] p-3 rounded-full shadow-lg hover:bg-[#555] transition"
+                    className="absolute right-4 top-[40%] sm:top-1/2 -translate-y-1/2 z-20 text-white bg-[#3A3A3D] p-3 rounded-full shadow-lg hover:bg-[#555] transition"
                 >
                     <FaArrowRight />
                 </button>
