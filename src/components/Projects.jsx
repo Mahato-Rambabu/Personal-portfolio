@@ -20,6 +20,8 @@ const techIcons = {
     "html": "/tech/html.png",
     "css": "/tech/css.png",
     "php": "/tech/php.png",
+    "MySQL": "/tech/mysql.png",
+    "js": "/tech/js.png",
 };
 
 const projectList = [
@@ -43,41 +45,32 @@ const projectList = [
     },
 
     {
-        title: "Portfolio Website",
-        image: "/projects/pic2.png",
-        description:
-            "My personal developer portfolio built with Next.js and Tailwind.",
-        tech: ["Next.js", "TailwindCSS"],
-        liveLink: "https://personal-portfolio-ten-psi-52.vercel.app",
-        codeLink: "https://github.com/Mahato-Rambabu/Personal-portfolio",
-    },
-    {
         title: "Gym-trainer - Fitness App",
         image: "/projects/gym.png",
         description:
-            "Fully responsive template for e-commerce stores with cart, filters, and search features.",
+             "Developed a custom fitness web application for Iron Gym as a freelance project. Implemented a QR-based system where users can scan gym machine codes to access exercise videos and instructions.",
         tech: ["html", "css", "php"],
         liveLink: "https://fitplay.web.app/",
         codeLink: "https://github.com/Anuj-010/gym-trainer-app",
     },
     {
-        title: "TalkMore - Chat Application",
-        image: "/projects/pic7.png",
+        title: "Bhajiwala - Online Fruits and Vegetables",
+        image: "/projects/bhajiwala.jpg",
         description:
-            "Real-time MERN stack chat app using socket.io and Firebase for notifications.",
-        tech: ["mongodb", "express", "React", "Node.js", "TailwindCSS"],
-        liveLink: "https://github.com/Mahato-Rambabu/TalkMore-Chat-Application",
-        codeLink: "https://github.com/Mahato-Rambabu/TalkMore-Chat-Application",
+            "Developed a PHP & MySQL-based web application for a local vegetable shop to manage products, users, and online orders.",
+        tech: ["php", "MySQL", "html", "css", "js"],
+        liveLink: "https://bhajiwala.infinityfreeapp.com",
+        codeLink: "https://github.com/Mahato-Rambabu/Bhajiwala---Fruits-And-Vegetales"
     },
-    // {
-    //     title: "Dashboard - Task Management",
-    //     image: "/projects/pic3.png",
-    //     description:
-    //         "Feature-rich dashboard for teams to manage tasks, statuses, and projects with filters.",
-    //     tech: ["mongodb", "express", "React", "Node.js", "TailwindCSS"],
-    //     liveLink: "https://ecom-template.vercel.app",
-    //     codeLink: "https://github.com/Mahato-Rambabu/DashBoard-Task-Management",
-    // },
+    {
+        title: "Portfolio Website",
+        image: "/projects/pic2.png",
+        description:
+            "My personal developer portfolio built with Next.js and Tailwind. to showcase my works, projects and skills with a modern, responsive design.",
+        tech: ["Next.js", "TailwindCSS"],
+        liveLink: "https://personal-portfolio-ten-psi-52.vercel.app",
+        codeLink: "https://github.com/Mahato-Rambabu/Personal-portfolio",
+    },
 ];
 
 const Projects = () => {
@@ -160,7 +153,7 @@ const Projects = () => {
 
                             >
                                 <div className="relative w-full">
-                                   <img src={project.image} className="w-full h-44 object-cover rounded-t-3xl" />
+                                    <img src={project.image} className="w-full h-44 object-cover rounded-t-3xl" />
                                 </div>
                                 <div className="p-5">
                                     <h3 className="text-sm sm:text-md font-bold mb-2">{project.title}</h3>
