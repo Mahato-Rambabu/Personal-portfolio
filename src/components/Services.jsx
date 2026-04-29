@@ -49,7 +49,7 @@ const QrarImage = () => {
 
 const Services = ({ onContactClick }) => {
   return (
-    <section id="services" className="py-36 px-6 text-[#E0E0E0] bg-[#12121c]">
+    <section id="services" className="py-20 px-6 text-[#E0E0E0] bg-[#12121c]">
       {/* Title */}
       <div className="text-center mb-12">
         <h2 className="text-4xl md:text-5xl font-bold mb-2">Services</h2>
@@ -70,10 +70,10 @@ const Services = ({ onContactClick }) => {
           <div className="order-2 md:order-1 w-full md:w-1/2 p-6 md:p-10 flex flex-col justify-between">
             <div>
               <h3 className="text-3xl md:text-4xl font-bold mb-4 text-white">
-                QRAR Startup
+                  Nexadine - Restauarant SaaS Ordering Platform
               </h3>
               <p className="text-[#DDDDDD] text-sm md:text-md leading-relaxed">
-                Discover a smarter way to dine with <strong>QRAR</strong> — a
+                If you are a Restaurant Owner, Discover a smarter way to dine with <strong>Nexadine</strong> — a
                 powerful PWA that lets customers scan, browse, and order
                 instantly from dynamic menus. No app download needed. Just tap,
                 explore, and enjoy.

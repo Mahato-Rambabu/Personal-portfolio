@@ -6,21 +6,25 @@ import 'react-circular-progressbar/dist/styles.css';
 import { motion } from "framer-motion";
 
 const skills = [
+  { name: "JavaScript", icon: "javascript", level: "90%", experience: "2 years", desc: "Scripting Programming" },
   { name: "React", icon: "react", level: "90%", experience: "2 years", desc: "JavaScript library" },
   { name: "NextJS", icon: "next", level: "90%", experience: "2 years", desc: "React framework" },
   { name: "NodeJS", icon: "nodejs", level: "85%", experience: "1.5 years", desc: "Runtime environment" },
-  { name: "JavaScript", icon: "javascript", level: "90%", experience: "2 years", desc: "Scripting Programming" },
-  { name: "Java", icon: "java", level: "85%", experience: "1 year", desc: "OOP" },
-  { name: "Python", icon: "python", level: "80%", experience: "1 year", desc: "Interpreted Programming" },
-  { name: "SQL", icon: "sql", level: "90%", experience: "1.5 years", desc: "Structured Query Language" },
+  // { name: "Java", icon: "java", level: "85%", experience: "1 year", desc: "OOP" },
+  // { name: "Python", icon: "python", level: "80%", experience: "1 year", desc: "Interpreted Programming" },
+  { name: "mySQL", icon: "mysql", level: "90%", experience: "1.5 years", desc: "Structured Query Language" },
   { name: "Tailwind CSS", icon: "tailwind", level: "95%", experience: "2 years", desc: "CSS Framework" },
   { name: "MongoDB", icon: "mongodb", level: "85%", experience: "1.5 years", desc: "NoSQL Database" },
   { name: "PHP", icon: "php", level: "95%", experience: "2.5 years", desc: "Server-side Scripting" },
+  { name: "PostgreSQL", icon: "postgresql", level: "80%", experience: "1 year", desc: "Relational Database" },
+   { name: "Firebase", icon: "firebase", level: "80%", experience: "1 year", desc: "Backend-as-a-Service" },  
 ];
+
+
 
 const Skills = () => {
   return (
-    <section id="skills" className="bg-[#141423] px-6 text-[#E0E0E0] py-36">
+    <section id="skills" className="bg-[#141423] px-6 text-[#E0E0E0] py-20">
       <div className="text-center mb-12">
         <h2 className="text-4xl md:text-5xl font-bold mb-2">Skills</h2>
         <p className="text-[#AAAAAA] max-w-xl mx-auto text-sm md:text-base">

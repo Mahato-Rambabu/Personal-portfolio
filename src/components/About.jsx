@@ -66,21 +66,22 @@ const skills = [
 
 const experience = [
     {
+        role: "Developer Intern — Aakrutii Technology",
+        type: "Internship",
+        period: "May 2025 – Nov 2025",
+        location: "Pune, India",
+        desc: "Developed and deployed multiple client-facing web applications using React, Node.js, and PostgreSQL. Designed RESTful APIs to streamline business workflows and improve operational efficiency. Maintained version control and sprint tracking using Git and JIRA in an agile environment.",
+        color: "#6C63FF",
+    },
+    {
         role: "Game Test Intern — Ubisoft",
         type: "Internship",
         period: "Feb 2024 – Aug 2024",
         location: "Pune, India",
         desc: "Independently applied and secured an internship at Ubisoft, one of the world's largest game studios. Executed 50+ detailed test cases improving bug identification speed, logged structured bug reports via JIRA, and ensured QA reliability with precise documentation in an agile environment.",
         color: "#A259FF",
-    },
-    {
-        role: "Independent Full-Stack Developer",
-        type: "Self-Employed",
-        period: "Sep 2024 – Present",
-        location: "Pune, India",
-        desc: "Built and deployed multiple full-stack products while actively seeking a full-time role, including a live QR-based Restaurant SaaS, a Gym Trainer platform, and an E-Commerce Online Grocery App. Focused on creating performant, user-friendly applications using React, Node.js, PHP, and Tailwind CSS.",
-        color: "#6C63FF",
-    },
+    }
+    
 ];
 
 // ─── ANIMATION HELPER ────────────────────────────────────────────────────────

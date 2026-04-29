@@ -90,7 +90,7 @@ const Projects = () => {
     return (
         <section
             id="projects"
-            className="relative px-4  py-36 text-[#E0E0E0] bg-[#171724]"
+            className="relative px-4  py-20 text-[#E0E0E0] bg-[#171724]"
         >
             <div className="text-center mb-14">
                 <h2 className="text-4xl md:text-5xl font-bold relative inline-block">
