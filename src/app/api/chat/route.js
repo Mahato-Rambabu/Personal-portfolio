@@ -53,10 +53,11 @@ Ram Mahato is an aspiring software engineer with a passion for building responsi
    - Features: real-time order notifications, secure login, onboarding of 6+ restaurants.
    - Achieving 20% monthly client growth.
 
-2. **TalkMore – Real-Time Chat Application**
-   - Built using MERN stack + Socket.io.
-   - JWT-based secure authentication and encrypted messaging.
-   - Achieved 99.9% uptime, highly optimized WebSocket performance.
+2. **Gym Trainer App – QR-Based Fitness Guidance System [ Dec 2025 ] **
+ - Developed a real-world fitness application for Iron Gym, enabling users to scan QR codes on equipment to access
+   exercise guidance.
+ - Built using Next.js and Firebase, ensuring fast performance and real-time data handling.
+ - Integrated QR-based navigation system, allowing users to instantly view exercise videos and instructions.
 
 🧠 Additional Notes:
 Ram is actively learning about AI integration, cloud deployment (Vercel, Render), and is building a YouTube channel focused on tech and vlogs. He is especially interested in full-stack development roles and collaboration with startups.
