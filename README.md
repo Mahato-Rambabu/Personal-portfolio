@@ -2,7 +2,7 @@
 
 My personal developer portfolio showcasing my projects, skills, and experience as a Full Stack Developer.
 
-🔗 **[Live Site](https://mahatorambabu.dev)**
+🔗 **[Live Site](https://personal-portfolio-ten-psi-52.vercel.app/)**
 
 ---
 
