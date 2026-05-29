@@ -65,7 +65,7 @@ const Hero = ({ onHireMeClick }) => {
            Let&quot;s Work Together
           </button>
           <a
-            href="/resume.pdf"
+            href="/Mahato_Rambabu.pdf"
             download="Ram-Mahato-Resume"
             className="border border-[#A259FF] text-[#A259FF] px-6 py-3 rounded-lg hover:bg-[#A259FF]/10 transition font-semibold"
           >

@@ -23,13 +23,13 @@ const socials = [
     {
         icon: <FaLinkedin />,
         label: "LinkedIn",
-        href: "https://www.linkedin.com/in/rambabumahato/", // ← update
+        href: "https://www.linkedin.com/in/rambabumahato/",
         color: "#0A66C2",
     },
     {
         icon: <FaInstagram />,
         label: "Instagram",
-        href: "https://www.instagram.com/im_.ram._", // ← update
+        href: "https://www.instagram.com/im_.ram._",
         color: "#E1306C",
     },
 ];
@@ -37,7 +37,15 @@ const socials = [
 const education = [
     {
         icon: <FaGraduationCap />,
-        title: "BCA – Computer",
+        title: "MCA – Computer Applications",
+        institution: "Dr. D. Y. Patil Vidyapeeth, Pune",
+        year: "Jul 2026 onwards",
+        marks: "Pursuing",
+        color: "#00C896",
+    },
+    {
+        icon: <FaGraduationCap />,
+        title: "BCA – Computer Application",
         institution: "MIT Art's Commerce and Science College, Pune",
         year: "2021 – 2024",
         marks: "CGPA: 7.70",
@@ -54,34 +62,40 @@ const education = [
 ];
 
 const skills = [
-    { name: "React / Next.js", pct: 90 },
-    { name: "Node.js / Express", pct: 85 },
-    { name: "JavaScript", pct: 90 },
-    { name: "Tailwind CSS", pct: 95 },
-    { name: "MongoDB", pct: 85 },
-    { name: "SQL / PostgreSQL", pct: 90 },
-    { name: "PHP", pct: 95 },
-    { name: "Java", pct: 85 },
+    { name: "React / Next.js", pct: 85 },
+    { name: "Node.js / Express", pct: 80 },
+    { name: "JavaScript", pct: 85 },
+    { name: "Tailwind CSS", pct: 85 },
+    { name: "MongoDB", pct: 80 },
+    { name: "SQL / PostgreSQL", pct: 75 },
+    { name: "PHP", pct: 65 },
+    { name: "Java", pct: 60 },
 ];
 
 const experience = [
     {
-        role: "Developer Intern — Aakrutii Technology",
-        type: "Internship",
-        period: "May 2025 – Nov 2025",
+        role: "Freelance Full Stack Developer - FitPlay",
+        type: "Freelance",
+        period: "Oct 2025 – Dec 2025",
         location: "Pune, India",
-        desc: "Developed and deployed multiple client-facing web applications using React, Node.js, and PostgreSQL. Designed RESTful APIs to streamline business workflows and improve operational efficiency. Maintained version control and sprint tracking using Git and JIRA in an agile environment.",
-        color: "#6C63FF",
+        desc: "Built FitPlay - a QR-based gym fitness platform for The Iron Gym, Pune. Gym-goers scan a QR code to instantly access exercise guidance without downloading an app. Built with Next.js and Firebase with real-time data sync. Managed the full client lifecycle from brief to deployment and handover.",
+        color: "#00C896",
     },
     {
-        role: "Game Test Intern — Ubisoft",
+        role: "Freelance Full Stack Developer - QRAR",
+        type: "Freelance",
+        period: "Dec 2024 – Apr 2025",
+        location: "Pune, India",
+        desc: "Contracted by Classy Castle to build QRAR - a multi-tenant restaurant ordering SaaS from scratch. Sole developer across the full stack: React frontend, Node.js/Express backend, MongoDB Atlas, JWT authentication, rate limiting, and production deployment on Vercel + Render. Platform currently serves 2+ paying restaurant clients.",
+        color: "#A259FF",
+    },
+    {
         type: "Internship",
         period: "Feb 2024 – Aug 2024",
         location: "Pune, India",
         desc: "Independently applied and secured an internship at Ubisoft, one of the world's largest game studios. Executed 50+ detailed test cases improving bug identification speed, logged structured bug reports via JIRA, and ensured QA reliability with precise documentation in an agile environment.",
-        color: "#A259FF",
-    }
-    
+        color: "#6C63FF",
+    },
 ];
 
 // ─── ANIMATION HELPER ────────────────────────────────────────────────────────
@@ -141,6 +155,27 @@ function SkillBar({ name, pct, delay }) {
     );
 }
 
+// ─── BADGE STYLE HELPER ──────────────────────────────────────────────────────
+
+function badgeStyle(type) {
+    if (type === "Internship") {
+        return {
+            background: "rgba(162,89,255,0.2)",
+            color: "#A259FF",
+        };
+    }
+    if (type === "Freelance") {
+        return {
+            background: "rgba(0,200,150,0.2)",
+            color: "#00C896",
+        };
+    }
+    return {
+        background: "rgba(108,99,255,0.2)",
+        color: "#8B85FF",
+    };
+}
+
 // ─── MAIN COMPONENT ──────────────────────────────────────────────────────────
 
 export default function About() {
@@ -167,34 +202,37 @@ export default function About() {
                     <Card>
                         <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
                             I'm{" "}
-                            <span className="text-white font-semibold">Rambabu Mahato</span> a
+                            <span className="text-white font-semibold">Rambabu Mahato</span>, a
                             Full-Stack Developer based in{" "}
                             <span className="text-[#A259FF] font-medium">Pune, India</span>.
                             I graduated with a{" "}
                             <span className="text-white font-semibold">BCA from MIT Pune in 2024</span>{" "}
-                            and independently secured an internship at {" "}
-                            <span className="text-[#A259FF] font-semibold">Ubisoft </span> 
+                            and independently secured an internship at{" "}
+                            <span className="text-[#A259FF] font-semibold">Ubisoft</span>,{" "}
                             one of the world's largest game studios, before most of my peers
                             even started applying.
                         </p>
                         <p className="text-gray-400 leading-relaxed text-sm mt-3">
-                            Since graduating, I've been building real products
+                            Since graduating, I've been freelancing and building real products —
                             a live QR-based{" "}
-                            <span className="text-white font-medium">Restaurant SaaS</span>,
+                            <span className="text-white font-medium">Restaurant SaaS with 2+ paying clients</span>,
                             a{" "}
-                            <span className="text-white font-medium">Gym Trainer platform</span>,
-                            and an{" "}
-                            <span className="text-white font-medium">E-Commerce Online Grocery App </span>
-                            while actively looking for a{" "}
+                            <span className="text-white font-medium">QR-based Gym Fitness platform</span>{" "}
+                            for a real client, and more — while actively looking for a{" "}
                             <span className="text-[#A259FF] font-semibold">
                                 full-time developer role
                             </span>{" "}
                             where I can grow fast and ship things that matter.
                         </p>
+                        <p className="text-gray-500 leading-relaxed text-xs mt-3">
+                            Currently pursuing{" "}
+                            <span className="text-[#00C896] font-medium">MCA from Dr. D. Y. Patil Vidyapeeth</span>{" "}
+                            from July 2026 — combining formal education with real-world product experience.
+                        </p>
                     </Card>
                 </motion.div>
 
-                {/* Location + Socials + Badge */}
+                {/* Location + Socials */}
                 <motion.div {...fadeUp(0.15)} className="flex flex-col gap-4">
                     <Card className="flex items-center gap-3">
                         <FaMapMarkerAlt className="text-[#A259FF] text-lg flex-shrink-0" />
@@ -203,6 +241,7 @@ export default function About() {
                                 Location
                             </p>
                             <p className="text-sm text-white font-medium">Pune, India</p>
+                            <p className="text-xs text-[#00C896] mt-0.5">Open to work anywhere in India</p>
                         </div>
                     </Card>
 
@@ -230,7 +269,16 @@ export default function About() {
                         </div>
                     </Card>
 
-                    {/* Open to work pulsing badge */}
+                    {/* Open to work badge */}
+                    <Card className="flex items-center gap-3">
+                        <div
+                            className="w-2.5 h-2.5 rounded-full flex-shrink-0 animate-pulse"
+                            style={{ background: "#00C896" }}
+                        />
+                        <p className="text-xs font-semibold text-[#00C896]">
+                            Open to Work — Immediate Joiner
+                        </p>
+                    </Card>
                 </motion.div>
             </div>
 
@@ -240,7 +288,7 @@ export default function About() {
                     <p className="text-xs text-gray-500 uppercase tracking-wider mb-4">
                         Education
                     </p>
-                    <div className="grid sm:grid-cols-2 gap-4">
+                    <div className="grid sm:grid-cols-3 gap-4">
                         {education.map((e, i) => (
                             <div
                                 key={i}
@@ -261,8 +309,8 @@ export default function About() {
                                 <span
                                     className="mt-1 inline-block text-xs font-semibold px-2 py-0.5 rounded-full w-fit"
                                     style={{
-                                        background: "rgba(162,89,255,0.15)",
-                                        color: "#A259FF",
+                                        background: `${e.color}22`,
+                                        color: e.color,
                                     }}
                                 >
                                     {e.marks}
@@ -273,7 +321,7 @@ export default function About() {
                 </Card>
             </motion.div>
 
-            {/* ══ ROW 3 — Experience / Proficiency tabs ══ */}
+            {/* ══ ROW 3 — Experience tab ══ */}
             <motion.div {...fadeUp(0.25)}>
                 <Card>
                     {/* Tab switcher */}
@@ -325,14 +373,7 @@ export default function About() {
                                             </span>
                                             <span
                                                 className="text-xs px-2 py-0.5 rounded-full font-medium"
-                                                style={{
-                                                    background:
-                                                        exp.type === "Internship"
-                                                            ? "rgba(162,89,255,0.2)"
-                                                            : "rgba(108,99,255,0.2)",
-                                                    color:
-                                                        exp.type === "Internship" ? "#A259FF" : "#8B85FF",
-                                                }}
+                                                style={badgeStyle(exp.type)}
                                             >
                                                 {exp.type}
                                             </span>
@@ -352,7 +393,6 @@ export default function About() {
                             ))}
                         </div>
                     )}
-
                 </Card>
             </motion.div>
         </section>
